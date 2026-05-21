@@ -1,8 +1,12 @@
-name: hello-shivadevopsengineer
-'on': Push
-jobs: null
-my-job: null
-runs-on: ubuntu-latest
-steps: null
-'-name': my-step
-run: echo "hello-shivadevopsengineer"
+name: Demo Workflow
+
+on:
+  push:
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: my-step
+        run: echo "hello-shivadevopsengineer"
